@@ -67,18 +67,18 @@
 		EEEA4EAE19BE031400F02F03 /* GNAssetsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNAssetsDataSource.m; sourceTree = "<group>"; };
 		EEEA4EAF19BE031400F02F03 /* GNAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAsset.h; sourceTree = "<group>"; };
 		EEEA4EB019BE031400F02F03 /* GNAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNAsset.m; sourceTree = "<group>"; };
-		EEEA4EB319BE031B00F02F03 /* GNStaticIndexedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNStaticIndexedDataSource.h; sourceTree = "<group>"; };
-		EEEA4EB419BE031B00F02F03 /* GNStaticIndexedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNStaticIndexedDataSource.m; sourceTree = "<group>"; };
-		EEEA4EB519BE031B00F02F03 /* GNStaticTableViewCellSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNStaticTableViewCellSource.h; sourceTree = "<group>"; };
-		EEEA4EB619BE031B00F02F03 /* GNStaticTableViewCellSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNStaticTableViewCellSource.m; sourceTree = "<group>"; };
+		EEEA4EB319BE031B00F02F03 /* GNStaticIndexedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNStaticIndexedDataSource.h; path = Core/GNStaticIndexedDataSource.h; sourceTree = "<group>"; };
+		EEEA4EB419BE031B00F02F03 /* GNStaticIndexedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GNStaticIndexedDataSource.m; path = Core/GNStaticIndexedDataSource.m; sourceTree = "<group>"; };
+		EEEA4EB519BE031B00F02F03 /* GNStaticTableViewCellSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNStaticTableViewCellSource.h; path = Core/GNStaticTableViewCellSource.h; sourceTree = "<group>"; };
+		EEEA4EB619BE031B00F02F03 /* GNStaticTableViewCellSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GNStaticTableViewCellSource.m; path = Core/GNStaticTableViewCellSource.m; sourceTree = "<group>"; };
 		EEEA4EBA19BE032D00F02F03 /* GNFetchedResultsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNFetchedResultsDataSource.h; sourceTree = "<group>"; };
 		EEEA4EBB19BE032D00F02F03 /* GNFetchedResultsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNFetchedResultsDataSource.m; sourceTree = "<group>"; };
 		EEEA4EBC19BE032D00F02F03 /* GNFetchedResultsTableViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNFetchedResultsTableViewMediator.h; sourceTree = "<group>"; };
 		EEEA4EBD19BE032D00F02F03 /* GNFetchedResultsTableViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNFetchedResultsTableViewMediator.m; sourceTree = "<group>"; };
-		EEEA4EC019BE033500F02F03 /* GNDynamicTableViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNDynamicTableViewMediator.h; sourceTree = "<group>"; };
-		EEEA4EC119BE033500F02F03 /* GNDynamicTableViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNDynamicTableViewMediator.m; sourceTree = "<group>"; };
-		EEEA4EC219BE033500F02F03 /* GNDynamicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNDynamicDataSource.h; sourceTree = "<group>"; };
-		EEEA4EC319BE033500F02F03 /* GNDynamicDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNDynamicDataSource.m; sourceTree = "<group>"; };
+		EEEA4EC019BE033500F02F03 /* GNDynamicTableViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNDynamicTableViewMediator.h; path = Core/GNDynamicTableViewMediator.h; sourceTree = "<group>"; };
+		EEEA4EC119BE033500F02F03 /* GNDynamicTableViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GNDynamicTableViewMediator.m; path = Core/GNDynamicTableViewMediator.m; sourceTree = "<group>"; };
+		EEEA4EC219BE033500F02F03 /* GNDynamicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNDynamicDataSource.h; path = Core/GNDynamicDataSource.h; sourceTree = "<group>"; };
+		EEEA4EC319BE033500F02F03 /* GNDynamicDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GNDynamicDataSource.m; path = Core/GNDynamicDataSource.m; sourceTree = "<group>"; };
 		EEEA4EC619BE034200F02F03 /* GNIndexedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNIndexedDataSource.h; sourceTree = "<group>"; };
 		EEEA4EC719BE034200F02F03 /* GNIndexedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNIndexedDataSource.m; sourceTree = "<group>"; };
 		EEEA4EC819BE034200F02F03 /* GNTableViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTableViewMediator.h; sourceTree = "<group>"; };
@@ -155,15 +155,9 @@
 		EEEA4E7F19BE024400F02F03 /* GNCollections */ = {
 			isa = PBXGroup;
 			children = (
-				EEEA4EB919BE031C00F02F03 /* Addons */,
-				EEEA4EA419BE026200F02F03 /* Static */,
-				EEEA4EA619BE027700F02F03 /* Dynamic */,
-				EEEA4EC619BE034200F02F03 /* GNIndexedDataSource.h */,
-				EEEA4EC719BE034200F02F03 /* GNIndexedDataSource.m */,
-				EEEA4EDA19BE06F300F02F03 /* GNIndexedDataSourceSection.h */,
-				EEEA4EDB19BE06F300F02F03 /* GNIndexedDataSourceSection.m */,
-				EEEA4EC819BE034200F02F03 /* GNTableViewMediator.h */,
-				EEEA4EC919BE034200F02F03 /* GNTableViewMediator.m */,
+				EEEA4EA319BE025F00F02F03 /* AssetsDataSource */,
+				EEEA4EA519BE026900F02F03 /* FetchedResultsController */,
+				EEEA4EDD19BE087500F02F03 /* Core */,
 				EEEA4E8019BE024400F02F03 /* Supporting Files */,
 			);
 			path = GNCollections;
@@ -217,6 +211,7 @@
 				EEEA4EB619BE031B00F02F03 /* GNStaticTableViewCellSource.m */,
 			);
 			name = Static;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EEEA4EA519BE026900F02F03 /* FetchedResultsController */ = {
@@ -239,15 +234,22 @@
 				EEEA4EC319BE033500F02F03 /* GNDynamicDataSource.m */,
 			);
 			name = Dynamic;
+			path = ..;
 			sourceTree = "<group>";
 		};
-		EEEA4EB919BE031C00F02F03 /* Addons */ = {
+		EEEA4EDD19BE087500F02F03 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EEEA4EA319BE025F00F02F03 /* AssetsDataSource */,
-				EEEA4EA519BE026900F02F03 /* FetchedResultsController */,
+				EEEA4EA419BE026200F02F03 /* Static */,
+				EEEA4EA619BE027700F02F03 /* Dynamic */,
+				EEEA4EC619BE034200F02F03 /* GNIndexedDataSource.h */,
+				EEEA4EC719BE034200F02F03 /* GNIndexedDataSource.m */,
+				EEEA4EDA19BE06F300F02F03 /* GNIndexedDataSourceSection.h */,
+				EEEA4EDB19BE06F300F02F03 /* GNIndexedDataSourceSection.m */,
+				EEEA4EC819BE034200F02F03 /* GNTableViewMediator.h */,
+				EEEA4EC919BE034200F02F03 /* GNTableViewMediator.m */,
 			);
-			name = Addons;
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
