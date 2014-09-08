@@ -23,16 +23,24 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
   s.source       = { :git => "https://github.com/jakubknejzlik/GNCollections.git", :tag => "0.0.1" }
-  s.frameworks = "UIKit"
-  s.source_files  = "Core/*.{h,m}"
   s.requires_arc = true
   
-  spec.subspec 'AssetsDataSource' do |assets|
-    assets.source_files = 'AssetsDataSource/*.{h,m}'
+  s.subspec "Core" do |ss|
+    ss.source_files = "GNCollections/AssetsDataSource/*.{h,m}"
+	ss.frameworks = "UIKit"
+	ss.source_files  = "GNCollections/Core/*.{h,m}"
   end
   
-  spec.subspec 'FetchedResultsController' do |fetchedResults|
-    fetchedResults.source_files = 'FetchedResultsController/*.{h,m}'
+  s.subspec "AssetsDataSource" do |ss|
+    ss.dependency "GNCollections/Core"
+	ss.frameworks = "MapKit","ImageIO"
+    ss.source_files = "GNCollections/AssetsDataSource/*.{h,m}"
+  end
+  
+  s.subspec "FetchedResultsController" do |ss|
+    ss.dependency "GNCollections/Core"
+	ss.frameworks = "CoreData"
+    ss.source_files = "GNCollections/FetchedResultsController/*.{h,m}"
   end
   
 end
