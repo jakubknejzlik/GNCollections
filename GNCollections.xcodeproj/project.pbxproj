@@ -8,14 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		EEEA4E7E19BE024400F02F03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA4E7D19BE024400F02F03 /* Foundation.framework */; };
-		EEEA4E8319BE024500F02F03 /* GNCollections.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEEA4E8219BE024500F02F03 /* GNCollections.h */; };
-		EEEA4E8519BE024500F02F03 /* GNCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4E8419BE024500F02F03 /* GNCollections.m */; };
 		EEEA4E8C19BE024500F02F03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA4E8B19BE024500F02F03 /* XCTest.framework */; };
 		EEEA4E8D19BE024500F02F03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA4E7D19BE024400F02F03 /* Foundation.framework */; };
 		EEEA4E8F19BE024500F02F03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA4E8E19BE024500F02F03 /* UIKit.framework */; };
 		EEEA4E9219BE024500F02F03 /* libGNCollections.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA4E7A19BE024400F02F03 /* libGNCollections.a */; };
 		EEEA4E9819BE024500F02F03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEEA4E9619BE024500F02F03 /* InfoPlist.strings */; };
 		EEEA4E9A19BE024500F02F03 /* GNCollectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4E9919BE024500F02F03 /* GNCollectionsTests.m */; };
+		EEEA4EB119BE031400F02F03 /* GNAssetsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EAE19BE031400F02F03 /* GNAssetsDataSource.m */; };
+		EEEA4EB219BE031400F02F03 /* GNAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EB019BE031400F02F03 /* GNAsset.m */; };
+		EEEA4EB719BE031B00F02F03 /* GNStaticIndexedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EB419BE031B00F02F03 /* GNStaticIndexedDataSource.m */; };
+		EEEA4EB819BE031B00F02F03 /* GNStaticTableViewCellSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EB619BE031B00F02F03 /* GNStaticTableViewCellSource.m */; };
+		EEEA4EBE19BE032D00F02F03 /* GNFetchedResultsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EBB19BE032D00F02F03 /* GNFetchedResultsDataSource.m */; };
+		EEEA4EBF19BE032D00F02F03 /* GNFetchedResultsTableViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EBD19BE032D00F02F03 /* GNFetchedResultsTableViewMediator.m */; };
+		EEEA4EC419BE033500F02F03 /* GNDynamicTableViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EC119BE033500F02F03 /* GNDynamicTableViewMediator.m */; };
+		EEEA4EC519BE033500F02F03 /* GNDynamicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EC319BE033500F02F03 /* GNDynamicDataSource.m */; };
+		EEEA4ECA19BE034200F02F03 /* GNIndexedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EC719BE034200F02F03 /* GNIndexedDataSource.m */; };
+		EEEA4ECB19BE034200F02F03 /* GNTableViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EC919BE034200F02F03 /* GNTableViewMediator.m */; };
+		EEEA4ECD19BE03B000F02F03 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA4ECC19BE03B000F02F03 /* AssetsLibrary.framework */; };
+		EEEA4ECF19BE040D00F02F03 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA4ECE19BE040D00F02F03 /* MapKit.framework */; };
+		EEEA4ED319BE046500F02F03 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEA4ED219BE046500F02F03 /* ImageIO.framework */; };
+		EEEA4ED919BE069D00F02F03 /* GNAssetsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4ED819BE069D00F02F03 /* GNAssetsGroup.m */; };
+		EEEA4EDC19BE06F300F02F03 /* GNIndexedDataSourceSection.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEA4EDB19BE06F300F02F03 /* GNIndexedDataSourceSection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +48,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				EEEA4E8319BE024500F02F03 /* GNCollections.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +57,40 @@
 		EEEA4E7A19BE024400F02F03 /* libGNCollections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGNCollections.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEA4E7D19BE024400F02F03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEEA4E8119BE024400F02F03 /* GNCollections-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNCollections-Prefix.pch"; sourceTree = "<group>"; };
-		EEEA4E8219BE024500F02F03 /* GNCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNCollections.h; sourceTree = "<group>"; };
-		EEEA4E8419BE024500F02F03 /* GNCollections.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNCollections.m; sourceTree = "<group>"; };
 		EEEA4E8A19BE024500F02F03 /* GNCollectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNCollectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEA4E8B19BE024500F02F03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EEEA4E8E19BE024500F02F03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EEEA4E9519BE024500F02F03 /* GNCollectionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GNCollectionsTests-Info.plist"; sourceTree = "<group>"; };
 		EEEA4E9719BE024500F02F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EEEA4E9919BE024500F02F03 /* GNCollectionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNCollectionsTests.m; sourceTree = "<group>"; };
+		EEEA4EAD19BE031400F02F03 /* GNAssetsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAssetsDataSource.h; sourceTree = "<group>"; };
+		EEEA4EAE19BE031400F02F03 /* GNAssetsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNAssetsDataSource.m; sourceTree = "<group>"; };
+		EEEA4EAF19BE031400F02F03 /* GNAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAsset.h; sourceTree = "<group>"; };
+		EEEA4EB019BE031400F02F03 /* GNAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNAsset.m; sourceTree = "<group>"; };
+		EEEA4EB319BE031B00F02F03 /* GNStaticIndexedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNStaticIndexedDataSource.h; sourceTree = "<group>"; };
+		EEEA4EB419BE031B00F02F03 /* GNStaticIndexedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNStaticIndexedDataSource.m; sourceTree = "<group>"; };
+		EEEA4EB519BE031B00F02F03 /* GNStaticTableViewCellSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNStaticTableViewCellSource.h; sourceTree = "<group>"; };
+		EEEA4EB619BE031B00F02F03 /* GNStaticTableViewCellSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNStaticTableViewCellSource.m; sourceTree = "<group>"; };
+		EEEA4EBA19BE032D00F02F03 /* GNFetchedResultsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNFetchedResultsDataSource.h; sourceTree = "<group>"; };
+		EEEA4EBB19BE032D00F02F03 /* GNFetchedResultsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNFetchedResultsDataSource.m; sourceTree = "<group>"; };
+		EEEA4EBC19BE032D00F02F03 /* GNFetchedResultsTableViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNFetchedResultsTableViewMediator.h; sourceTree = "<group>"; };
+		EEEA4EBD19BE032D00F02F03 /* GNFetchedResultsTableViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNFetchedResultsTableViewMediator.m; sourceTree = "<group>"; };
+		EEEA4EC019BE033500F02F03 /* GNDynamicTableViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNDynamicTableViewMediator.h; sourceTree = "<group>"; };
+		EEEA4EC119BE033500F02F03 /* GNDynamicTableViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNDynamicTableViewMediator.m; sourceTree = "<group>"; };
+		EEEA4EC219BE033500F02F03 /* GNDynamicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNDynamicDataSource.h; sourceTree = "<group>"; };
+		EEEA4EC319BE033500F02F03 /* GNDynamicDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNDynamicDataSource.m; sourceTree = "<group>"; };
+		EEEA4EC619BE034200F02F03 /* GNIndexedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNIndexedDataSource.h; sourceTree = "<group>"; };
+		EEEA4EC719BE034200F02F03 /* GNIndexedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNIndexedDataSource.m; sourceTree = "<group>"; };
+		EEEA4EC819BE034200F02F03 /* GNTableViewMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTableViewMediator.h; sourceTree = "<group>"; };
+		EEEA4EC919BE034200F02F03 /* GNTableViewMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTableViewMediator.m; sourceTree = "<group>"; };
+		EEEA4ECC19BE03B000F02F03 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		EEEA4ECE19BE040D00F02F03 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EEEA4ED019BE044300F02F03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EEEA4ED219BE046500F02F03 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		EEEA4ED719BE069D00F02F03 /* GNAssetsGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAssetsGroup.h; sourceTree = "<group>"; };
+		EEEA4ED819BE069D00F02F03 /* GNAssetsGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNAssetsGroup.m; sourceTree = "<group>"; };
+		EEEA4EDA19BE06F300F02F03 /* GNIndexedDataSourceSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNIndexedDataSourceSection.h; sourceTree = "<group>"; };
+		EEEA4EDB19BE06F300F02F03 /* GNIndexedDataSourceSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNIndexedDataSourceSection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEA4ED319BE046500F02F03 /* ImageIO.framework in Frameworks */,
+				EEEA4ECF19BE040D00F02F03 /* MapKit.framework in Frameworks */,
+				EEEA4ECD19BE03B000F02F03 /* AssetsLibrary.framework in Frameworks */,
 				EEEA4E7E19BE024400F02F03 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +141,10 @@
 		EEEA4E7C19BE024400F02F03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEEA4ED219BE046500F02F03 /* ImageIO.framework */,
+				EEEA4ED019BE044300F02F03 /* CoreGraphics.framework */,
+				EEEA4ECE19BE040D00F02F03 /* MapKit.framework */,
+				EEEA4ECC19BE03B000F02F03 /* AssetsLibrary.framework */,
 				EEEA4E7D19BE024400F02F03 /* Foundation.framework */,
 				EEEA4E8B19BE024500F02F03 /* XCTest.framework */,
 				EEEA4E8E19BE024500F02F03 /* UIKit.framework */,
@@ -110,8 +155,15 @@
 		EEEA4E7F19BE024400F02F03 /* GNCollections */ = {
 			isa = PBXGroup;
 			children = (
-				EEEA4E8219BE024500F02F03 /* GNCollections.h */,
-				EEEA4E8419BE024500F02F03 /* GNCollections.m */,
+				EEEA4EB919BE031C00F02F03 /* Addons */,
+				EEEA4EA419BE026200F02F03 /* Static */,
+				EEEA4EA619BE027700F02F03 /* Dynamic */,
+				EEEA4EC619BE034200F02F03 /* GNIndexedDataSource.h */,
+				EEEA4EC719BE034200F02F03 /* GNIndexedDataSource.m */,
+				EEEA4EDA19BE06F300F02F03 /* GNIndexedDataSourceSection.h */,
+				EEEA4EDB19BE06F300F02F03 /* GNIndexedDataSourceSection.m */,
+				EEEA4EC819BE034200F02F03 /* GNTableViewMediator.h */,
+				EEEA4EC919BE034200F02F03 /* GNTableViewMediator.m */,
 				EEEA4E8019BE024400F02F03 /* Supporting Files */,
 			);
 			path = GNCollections;
@@ -141,6 +193,61 @@
 				EEEA4E9619BE024500F02F03 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEEA4EA319BE025F00F02F03 /* AssetsDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA4EAD19BE031400F02F03 /* GNAssetsDataSource.h */,
+				EEEA4EAE19BE031400F02F03 /* GNAssetsDataSource.m */,
+				EEEA4EAF19BE031400F02F03 /* GNAsset.h */,
+				EEEA4EB019BE031400F02F03 /* GNAsset.m */,
+				EEEA4ED719BE069D00F02F03 /* GNAssetsGroup.h */,
+				EEEA4ED819BE069D00F02F03 /* GNAssetsGroup.m */,
+			);
+			path = AssetsDataSource;
+			sourceTree = "<group>";
+		};
+		EEEA4EA419BE026200F02F03 /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA4EB319BE031B00F02F03 /* GNStaticIndexedDataSource.h */,
+				EEEA4EB419BE031B00F02F03 /* GNStaticIndexedDataSource.m */,
+				EEEA4EB519BE031B00F02F03 /* GNStaticTableViewCellSource.h */,
+				EEEA4EB619BE031B00F02F03 /* GNStaticTableViewCellSource.m */,
+			);
+			name = Static;
+			sourceTree = "<group>";
+		};
+		EEEA4EA519BE026900F02F03 /* FetchedResultsController */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA4EBA19BE032D00F02F03 /* GNFetchedResultsDataSource.h */,
+				EEEA4EBB19BE032D00F02F03 /* GNFetchedResultsDataSource.m */,
+				EEEA4EBC19BE032D00F02F03 /* GNFetchedResultsTableViewMediator.h */,
+				EEEA4EBD19BE032D00F02F03 /* GNFetchedResultsTableViewMediator.m */,
+			);
+			path = FetchedResultsController;
+			sourceTree = "<group>";
+		};
+		EEEA4EA619BE027700F02F03 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA4EC019BE033500F02F03 /* GNDynamicTableViewMediator.h */,
+				EEEA4EC119BE033500F02F03 /* GNDynamicTableViewMediator.m */,
+				EEEA4EC219BE033500F02F03 /* GNDynamicDataSource.h */,
+				EEEA4EC319BE033500F02F03 /* GNDynamicDataSource.m */,
+			);
+			name = Dynamic;
+			sourceTree = "<group>";
+		};
+		EEEA4EB919BE031C00F02F03 /* Addons */ = {
+			isa = PBXGroup;
+			children = (
+				EEEA4EA319BE025F00F02F03 /* AssetsDataSource */,
+				EEEA4EA519BE026900F02F03 /* FetchedResultsController */,
+			);
+			name = Addons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +331,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEEA4E8519BE024500F02F03 /* GNCollections.m in Sources */,
+				EEEA4ECA19BE034200F02F03 /* GNIndexedDataSource.m in Sources */,
+				EEEA4EC419BE033500F02F03 /* GNDynamicTableViewMediator.m in Sources */,
+				EEEA4EB719BE031B00F02F03 /* GNStaticIndexedDataSource.m in Sources */,
+				EEEA4ED919BE069D00F02F03 /* GNAssetsGroup.m in Sources */,
+				EEEA4EBF19BE032D00F02F03 /* GNFetchedResultsTableViewMediator.m in Sources */,
+				EEEA4ECB19BE034200F02F03 /* GNTableViewMediator.m in Sources */,
+				EEEA4EB219BE031400F02F03 /* GNAsset.m in Sources */,
+				EEEA4EB819BE031B00F02F03 /* GNStaticTableViewCellSource.m in Sources */,
+				EEEA4EBE19BE032D00F02F03 /* GNFetchedResultsDataSource.m in Sources */,
+				EEEA4EDC19BE06F300F02F03 /* GNIndexedDataSourceSection.m in Sources */,
+				EEEA4EC519BE033500F02F03 /* GNDynamicDataSource.m in Sources */,
+				EEEA4EB119BE031400F02F03 /* GNAssetsDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
